@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color1: #D89584;
+    --color2: #F4F4F4;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+iframe{
+    width: 100%;
+    border: none;
+    height: 350px;
+}
+div.cover{
+    background: url(images/cover_overlay.png) no-repeat center/100% 100%, url(images/cover.jpg) no-repeat center/cover;
+    height: 360px;
+    position: relative;
+}
+img.cover-profile{
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 50px;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+h2{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
+div.cover p{
+    color: lightgray;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+}
+div.cover-contact{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+}
+div.cover-contact p{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+div.cover-contact p:first-child{
+    margin-bottom: 14px;
+}
+div.cover-contact *{
+    color: #fff;
+    font-size: 14px;
+}
+
+a.contact-button{
+    color: var(--color1);
+    padding: 8px 20px;
+    background-color: #00000040;
+    text-decoration: none;
+    border: 3px solid var(--color1);
+    margin-top: 18px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+a.contact-button:hover{
+    color: #fff;
+    border: 3px solid #fff;
+}
+.section{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+div.section-grise-1{
+    background: url(images/triangle2white.svg) no-repeat center bottom/100%;
+    background-color: var(--color2);
+    padding-bottom: 80px;
+}
+
+div.section-grise-2{
+    background: url(images/triangle1white.svg) no-repeat center top/100%;
+    background-color: var(--color2);
+    padding-top: 80px;
+}
+
+div.separateur{
+    width: 150px;
+    height: 1px;
+    background-color: #979797;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.display-mobile{
+    display: none;
+}
+p.intro{
+    text-align: center;
+    font-size: 22px;
+    max-width: 450px;
+    margin: 15px auto;
+    line-height: 1.5;
+    color: #656565;
+}
+p.intro span{
+    font-weight: bold;
+}
+
+img.col-contenu{
+    width: 40%;
+}
+div.col-contenu{
+    width: 60%;
+}
+.float-right{
+    float: right;
+}
+.text-presentation{
+    padding-left: 30px;
+}
+.text-ligne-verticale{
+    padding-left: 16px;
+    border-left: 4px solid var(--color1);
+    height: 50px;
+    display: inline-block;
+}
+.text-presentation p{
+    margin-top: 0;
+}
+.barre-verticale{
+    background-color: var(--color1);
+    width: 4px;
+    height: 50px;
+    margin-right: 8px;
+}
+.table-portfolio{
+    width: 50%;
+    padding: 10px;
+}
+div.frame{
+    padding: 30px;
+    margin-top: 30px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.frame img{
+    width: 100px;
+}
+div.frame p.frame-titre{
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 15px;
+}
+div.frame .text-ligne-verticale{
+    height: 35px;
+}
+
+/* Portfolio */
+.portfolio-header{
+    background: url("images/header.jpg") no-repeat center/cover;
+    height: 90px;
+    position: relative;
+}
+.portfolio-header a{
+    position: absolute;
+    top: 6px;
+    right: 20px;
+}
+.portfolio-profile-name{
+    font-size: 26px;
+    font-weight: bold;
+    margin:0;
+    padding-top: 8px;
+    color: #fff;
+}
+.portfolio{
+    position: relative;
+}
+.portfolio h1{
+    font-size: 46px;
+    color: #000;
+}
+.portfolio h2{
+    font-size: 26px;
+    font-weight: normal;
+}
+.portfolio-back{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: var(--color1);
+}
+.projet img{
+    width: 70%;
+    max-width: 550px;    
+}
+
+/* For mobile and smartphone */
+@media only screen and (max-width: 768px){
+    img.cover-profile{
+        height: 90px;
+        margin-top: 75px;
+    }
+    h1{
+        font-size: 38px;
+        margin-top: 6px;
+        margin-bottom: 0px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    div.cover p{
+        margin-top: 2px;
+        font-size: 13px;
+    }
+    .section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div.section-grise-1{
+        padding-bottom: 40px;
+    }    
+    div.section-grise-2{
+        padding-top: 40px;
+    }
+    img.col-contenu{
+        width: 100%;
+    }
+    div.col-contenu{
+        width: 100%;
+    }
+    .text-presentation{
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+    .table-portfolio{
+        width: 100%;
+        padding: 10px;
+    }
+    iframe{
+        width: 100%;
+        border: none;
+    }
+    div.frame{
+        padding: 0px;
+        margin-top: 20px;
+        box-shadow: none;
+    }
+    div.frame p.frame-titre{
+        font-size: 28px;
+    }
+    div.frame img{
+        width: 70px;
+    }
+    .portfolio-profile-name {
+        font-size: 20px;
+        padding-top: 0px;
+        max-width: 102px;
+    }
+    .portfolio-header a {
+        top: 8px;
+        right: 10px;
+    }
+    a.contact-button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .portfolio h1{
+        font-size: 40px;
+    }
+    .portfolio h2{
+        font-size: 22px;
+    }
+    .projet img{
+        width: 100%;
+        /* max-width: 550px;     */
+    }
+    div.display-mobile{
+        display: block;
+    }
+    div.home-page.display-mobile{
+        display: none !important;
+    }
+
+}
+
+
+
